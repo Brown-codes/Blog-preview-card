@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      body {
+        background: hsl(47, 88%, 63%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 100%);
+        padding: 25px;
+        margin: 100px auto 100px;
+        max-width: 500px;
+        border-radius: 20px;
+        border: 2px solid black;
+        position: relative;
+        z-index: 999;
+      }
+
+      .card {
+        z-index: 999;
+        position: relative;
+      }
+
+      .card::before {
+        content: "";
+        width: 500px;
+        height: 675px;
+        position: absolute;
+        background-color: black;
+        border-radius: 25px;
+        margin: 110px 200px 100px 15px;
+      }
+
+      .card img {
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      .learning {
+        text-decoration: none;
+        color: black;
+        padding: 5px 10px;
+        background-color: hsl(47, 88%, 63%);
+        width: fit-content;
+        font-size: 20px;
+        font-weight: 400;
+        border-radius: 5px;
+        transition: ease 1s;
+      }
+
+      .learning:hover{
+        background-color: hsl(47, 84%, 55%);
+      }
+
+      .card p {
+        margin-top: 15px;
+        color: hsl(0, 0%, 42%);
+        font-weight: 400;
+      }
+
+      .card-text h1 {
+        color: hsl(0, 0%, 7%);
+        margin-top: 20px;
+        transition: ease 0.5s;
+        cursor: pointer;
+      }
+
+      .card-text h1:hover{
+        color: hsl(47, 84%, 55%);
+      }
+
+      .card-text p {
+        color: hsl(0, 0%, 42%);
+        letter-spacing: 1px;
+        font-size: 20px;
+        line-height: 32px;
+        font-weight: 400;
+      }
+
+      .svg {
+        width: 100%;
+      }
+
+      .profile {
+        display: flex;
+        margin-top: 15px;
+        align-items: center;
+      }
+
+      .profile p {
+        margin-bottom: 32px;
+        color: hsl(0, 0%, 7%);
+        font-weight: 600;
+      }
+
+      .profile img {
+        margin-right: 16px;
+      }
+
+      @media screen and (max-width: 375px) {
+        .card {
+          width: 300px;
+          margin: 100px auto 100px;
+          padding: 20px;
+          position: relative;
+        }
+
+        .card h1 {
+          font-size: 18px;
+        }
+
+        .card p {
+          font-size: 10px;
+          line-height: 15px;
+        }
+
+        .card .profile-img {
+          width: 30px;
+          margin-right: 10px;
+          margin-bottom: 0;
+        }
+
+        .profile {
+          margin-bottom: 4px;
+        }
+
+        .profile p {
+          margin-bottom: 0;
+          padding-bottom: 15px;
+        }
+
+        .card::before {
+          content: "";
+          width: 255px;
+          height: 442px;
+          position: absolute;
+          background-color: black;
+          border-radius: 25px;
+          margin: 106px 5px 100px 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-content">
+        <img
+          class="svg"
+          src="./assets/images/illustration-article.svg"
+          alt=""
+        />
+        <a class="learning" href="#">Learning</a>
+        <p>Published 21 Dec 2023</p>
+        <div class="card-text">
+          <h1>HTML & CSS foundations</h1>
+          <p>
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </div>
+
+        <div class="profile">
+          <img
+            class="profile-img"
+            src="./assets/images/image-avatar.webp"
+            alt=""
+          />
+          <p>Greg Hooper</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Brown-codes</a>.
+    </div>
+  </body>
+</html>
