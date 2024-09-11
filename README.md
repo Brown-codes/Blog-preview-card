@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Brown-codes/Blog-preview-card.git)
-- Live Site URL: [Add live site URL here](https://brown-codes.github.io/Blog-preview-card/)
+- Solution URL: (https://github.com/Brown-codes/Blog-preview-card.git)
+- Live Site URL: (https://brown-codes.github.io/Blog-preview-card/)
 
 ## My process
 
